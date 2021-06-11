@@ -1,0 +1,482 @@
+---Made by : https://v3rmillion.net/member.php?action=profile&uid=244024
+-- init
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/VenyxUI/main/Reuploaded"))() --someone reuploaded it so I put it in place of the original back up so guy can get free credit.
+local venyx = library.new("Soulmodders V2", 5013109572)
+
+-- ==============================================================================================================================
+            local rgbb = Color3.new(1, 0, 0)
+            local textt = ""
+            local custom_things = venyx:addPage("Custom Text", 5012544693)
+            local custom_text = custom_things:addSection("Custom text")
+            custom_text:addColorPicker(
+                "The color of the text",
+                rgbb,
+                function(val)
+                    rgbb = val
+                end
+            )
+            custom_text:addTextbox(
+                "What to say?",
+                "",
+                function(val)
+                    textt = val
+                end
+            )
+            custom_text:addButton(
+                "Send the text",
+                function()
+                    local A_1 = {
+                        [1] = getrenv()._G.Pass,
+                        [2] = "Chatted",
+                        [3] = textt,
+                        [4] = rgbb
+                    }
+                    local Event = game:GetService("ReplicatedStorage").Remotes.Events
+                    Event:FireServer(A_1)
+                end
+            )
+
+
+-- themes
+
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+-- first page
+local page = venyx:addPage("Charaters", 5012544693)
+local section1 = page:addSection("Any Character Customs")
+section1:addButton("Epic Man", function()
+    game:GetService("ReplicatedStorage").Remotes.Functions:InvokeServer({getrenv()._G.Pass, "PlaySound",game:GetService("StarterPlayer").StarterPlayerScripts.Music.Music["5Song"]})
+
+
+AnimationId = '0'
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+bind = "z" -- has to be lowercase
+
+
+mouse.KeyDown:connect(function(key)
+if key == bind then
+-----------------------
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4300091335"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "KnifeHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "KnifeHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "KnifeHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "KnifeHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:Connect(function(k) 
+if k == "x" then 
+-----------------------
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5667210178"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5657143572"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5667210178"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5657143572"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5667210178"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5657143572"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5667210178"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5657143572"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:Connect(function(k) 
+if k == "c" then 
+-----------------------
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://5667210178"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "LightHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0.019662413746119, 0, -0.99980670213699),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+local Anim = Instance.new("Animation")
+Anim.AnimationId = "rbxassetid://4300091335"
+local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+k:Play()
+k:AdjustSpeed(1)
+local args = {
+    [1] =  getrenv()._G.Pass,
+    [2] = game:service("Players").LocalPlayer.Backpack.Main.LockOnScript.LockOn.Value,
+    [3] = {
+        ["HitTime"] = 2.5,
+        ["Type"] = "Normal",
+        ["HitEffect"] = "KnifeHitEffect",
+        ["VictimCFrame"] = CFrame.new(Vector3.new(1.3049358129501, 0.40000003576279, -274.62911987305), Vector3.new(-0.019662326201797, -0, 0.99980670213699)),
+        ["HurtAnimation"] = game:GetService("ReplicatedStorage").Animations.HurtAnimations.Hurt1,
+        ["Velocity"] = Vector3.new(0,160,0),
+        ["Sound"] = game:GetService("ReplicatedStorage").Sounds.Punch,
+        ["Damage"] = 10
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Damage:InvokeServer(unpack(args))
+end
+end)
+end)
+
+
+-- 2 page
+local page2 = venyx:addPage("Moves", 5012544693)
+local section21 = page2:addSection("Asriel")
+local section22 = page2:addSection("Xchara/Cross")
+local section23 = page2:addSection("Sans")
+local section24 = page2:addSection("Frisk")
+local section25 = page2:addSection("Gt Frisk")
+local section26 = page2:addSection("Gt chara")
+local section27 = page2:addSection("ss chara")
+local section28 = page2:addSection("Betty")
+local section29 = page2:addSection("Undyne")
+
+
+ 
+section22:addButton("summon knives", function()
+	local A_1 = 
+		{
+			[1] = getrenv()._G.Pass, 
+			[2] = "SummonKnivesChara", 
+			[3] = "Spawn"
+		}
+	local Event = game:GetService("ReplicatedStorage").Remotes.XSansMoves
+	Event:InvokeServer(A_1)
+end)
+
+section26:addButton("special hell", function()
+	local A_1 = 
+		{
+			[1] = getrenv()._G.Pass, 
+			[2] = "AreaAttack", 
+			[3] = "Start"
+		}
+	local Event = game:GetService("ReplicatedStorage").Remotes.CharaMoves
+	Event:InvokeServer(A_1)
+end)
+
+section21:addButton("Shocker break it", function()
+	local args = {
+		[1] = {
+			[1] = getrenv()._G.Pass,
+			[2] = "ShockerBreaker",
+			[3] = "Start"
+		}
+	}
+
+	game:GetService("ReplicatedStorage").Remotes.AsrielMoves:InvokeServer(unpack(args))
+end)
+
+section21:addButton("HyperBeam", function()
+	local args = {
+		[1] = {
+			[1] = getrenv()._G.Pass,
+			[2] = "HyperBeam",
+			[3] = "Fire"
+		}
+	}
+
+	game:GetService("ReplicatedStorage").Remotes.AsrielMoves:InvokeServer(unpack(args))
+end)
+
+section27:addButton("Chaos Buster 1", function()
+	local args = {
+		[1] = {
+			[1] = getrenv()._G.Pass,
+			[2] = "ChaosBusterBlasters",
+			[3] = "SummonOne",
+			[4] = Vector3.new(1091.2574462891, -5.8583984375, 528.84344482422)
+		}
+	}
+
+	game:GetService("ReplicatedStorage").Remotes.SFCharaMoves:InvokeServer(unpack(args))
+end)
+
+section27:addButton("Chaos Buster 4", function()
+	local args = {
+		[1] = {
+			[1] = getrenv()._G.Pass,
+			[2] = "ChaosBusterBlasters",
+			[3] = "SummonEight",
+			[4] = Vector3.new(1091.2574462891, -5.8583984375, 528.84344482422)
+		}
+	}
+
+	game:GetService("ReplicatedStorage").Remotes.SFCharaMoves:InvokeServer(unpack(args))
+end)
+
+section21:addButton("Star Blazing", function()
+	local args = {
+		[1] = {
+			[1] = getrenv()._G.Pass,
+			[2] = "StarBlazing",
+			[3] = "Start"
+		}
+	}
+
+	game:GetService("ReplicatedStorage").Remotes.AsrielMoves:InvokeServer(unpack(args))
+end)
+
+-- second page
+local theme = venyx:addPage("Customization", 5012544693)
+local colors = theme:addSection("Colors")
+
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
+end
+
+--third page
+local page3 = venyx:addPage("Random", 5012544693)
+local section2 = page3:addSection("Etc")
+
+section2:addKeybind("Toggle Keybind", Enum.KeyCode.LeftControl, function()
+print("Activated Keybind")
+venyx:toggle()
+end, function()
+print("Changed Keybind")
+end)
+
+venyx:SelectPage(venyx.pages[1], true) -- no default for more freedom
